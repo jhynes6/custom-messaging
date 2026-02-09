@@ -1,0 +1,27 @@
+---
+description: Use Context7 for up-to-date API docs when creating API client helper scripts
+alwaysApply: true
+---
+
+# API Client Helper Scripts – Use Context7
+
+When creating or editing **API client helper scripts**, always use the Context7 MCP tools to fetch the latest API documentation before implementing.
+
+## Workflow
+
+1. **Resolve the library**  
+   Call `resolve-library-id` with the API/SDK name (e.g. the official client library for the service).
+
+2. **Query the docs**  
+   Call `query-docs` with the resolved library ID and a specific question (e.g. authentication, request format, error handling).
+
+3. **Implement from docs**  
+   Use the returned docs and examples to write the helper (client setup, endpoints, types, errors).
+
+## When This Applies
+
+- Adding a new API client or wrapper.
+- Adding endpoints or methods to an existing client.
+- Fixing or refactoring code that calls an external API.
+
+Do not guess API shapes or copy outdated examples; pull current docs from Context7 first.
