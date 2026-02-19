@@ -6,27 +6,44 @@ Simply modify promps/custom_messaging.txt to get your desired custom message.
 
 Ex: if you are selling SEO, you could use a prompt that generates a sample content calendar based on the context gathered from the client's website + LI company profile. 
 
-## — BASE CASE EXAMPLE FOR CURRENT PROMPTS (`prompts/custom_messaging.txt`)
+## BASE CASE EXAMPLE IN CURRENT PROMPTS (`prompts/custom_messaging.txt`)
 
-PROBLEM CONTEXT: 
+### PROBLEM CONTEXT: 
 
 - Email outreach to B2B service companies selling outbound GTM services
 - Desired personalization: a bullet-point list of intent signals relevant to the prospect's service offering
 
-SAMPLE USAGE: 
+### SAMPLE USAGE: 
 
-If you we're trying to find high-intent buyers for your {custom_message_output_1}, you'd look at accounts where: 
+(The app only generates the values for the custom variables, so you'll need to adjust the prompts accourdingly) 
+
+"""
+<...EMAIL INTRO...>
+
+If you we're trying to find high-intent buyers for your {custom_message_output_1}, we might start by looking at accounts with
 
 {custom_message_output_3} 
 
-SAMPLE OUTPUT: 
+<...EMAIL SIGN-OFF...>
+"""
 
-If you we're trying to find high-intent buyers for your {email & SMS marketing} services, we might start by looking at accounts with the following activity: 
+### SAMPLE OUTPUT: 
 
-{- Search intent topics like "Klaviyo flow setup" or "SMS abandoned cart".
+"""
+<...EMAIL INTRO...>
+
+If you we're trying to find high-intent buyers for your {email & SMS marketing} services, we might start by looking at accounts with
+
+{
+- Search intent topics like "Klaviyo flow setup" or "SMS abandoned cart".
 - Job posts for CRM Lifecycle Manager and leadership changes in Marketing.
 - Declining organic traffic and rising paid search share in Similarweb/Semrush.
-- Low review recency and increased complaints about support or repeat purchases.}
+- Low review recency and increased complaints about support or repeat purchases.
+}
+
+<...EMAIL SIGN-OFF...>
+
+"""
 
 ---
 
