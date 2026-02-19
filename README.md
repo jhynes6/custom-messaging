@@ -6,7 +6,27 @@ Simply modify promps/custom_messaging.txt to get your desired custom message.
 
 Ex: if you are selling SEO, you could use a prompt that generates a sample content calendar based on the context gathered from the client's website + LI company profile. 
 
+## — BASE CASE EXAMPLE FOR CURRENT PROMPTS (`prompts/custom_messaging.txt`)
 
+PROBLEM CONTEXT: 
+
+- Email outreach to B2B service companies selling outbound GTM services
+- Desired personalization: a bullet-point list of intent signals relevant to the prospect's service offering
+
+SAMPLE USAGE: 
+
+If you we're trying to find high-intent buyers for your {custom_message_output_1}, you'd look at accounts where: 
+
+{custom_message_output_3} 
+
+SAMPLE OUTPUT: 
+
+If you we're trying to find high-intent buyers for your {email & SMS marketing} services, we might start by looking at accounts with the following activity: 
+
+{- Search intent topics like "Klaviyo flow setup" or "SMS abandoned cart".
+- Job posts for CRM Lifecycle Manager and leadership changes in Marketing.
+- Declining organic traffic and rising paid search share in Similarweb/Semrush.
+- Low review recency and increased complaints about support or repeat purchases.}
 
 ---
 
@@ -35,12 +55,13 @@ With the raw data collected, the pipeline runs three sequential LLM steps:
 Synthesizes all gathered data into a structured brief covering:
 - Services and products offered
 - Markets and industries served
-- Business problems and pain points addressed
+- Business problems and pain points addressed or purpose of the product / service
 - Case studies with quantifiable results
 
-> If no pain points are found, a fallback KPI research step (`prompts/kpi_research.txt`) infers relevant metrics from the company's services.
+> If no pain points or purpose are found, a fallback KPI research step (`prompts/kpi_research.txt`) infers relevant metrics from the company's services.
 
-**Step 2 — Custom Messaging** (`prompts/custom_messaging.txt`)
+**Step 2.1 — Custom Messaging** (`prompts/custom_messaging.txt`)
+
 Uses the prospect brief as context to generate three messaging variables designed for cold outreach:
 
 | Output Variable | Description |
