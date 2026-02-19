@@ -17,7 +17,6 @@ Ex: if you are selling SEO, you could use a prompt that generates a sample conte
 
 (The app only generates the values for the custom variables, so you'll need to adjust the prompts accourdingly) 
 
-"""
 <...EMAIL INTRO...>
 
 If you we're trying to find high-intent buyers for your {custom_message_output_1}, we might start by looking at accounts with
@@ -25,25 +24,19 @@ If you we're trying to find high-intent buyers for your {custom_message_output_1
 {custom_message_output_3} 
 
 <...EMAIL SIGN-OFF...>
-"""
 
 ### SAMPLE OUTPUT: 
 
-"""
 <...EMAIL INTRO...>
 
-If you we're trying to find high-intent buyers for your {email & SMS marketing} services, we might start by looking at accounts with
+If you we're trying to find high-intent buyers for your email & SMS marketing services, we might start by looking at accounts with
 
-{
 - Search intent topics like "Klaviyo flow setup" or "SMS abandoned cart".
 - Job posts for CRM Lifecycle Manager and leadership changes in Marketing.
 - Declining organic traffic and rising paid search share in Similarweb/Semrush.
 - Low review recency and increased complaints about support or repeat purchases.
-}
 
 <...EMAIL SIGN-OFF...>
-
-"""
 
 ---
 
