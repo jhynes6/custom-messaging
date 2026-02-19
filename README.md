@@ -1,6 +1,6 @@
 # Custom Messaging Pipeline
 
-An async pipeline that takes a list of prospect companies, collects intelligence from their website and LinkedIn profile, and uses that context to generate tailored go-to-market messaging variables via LLM.
+An async pipeline that takes a csv file of prospects, collects intelligence from their website and LinkedIn profile, and uses that context to generate tailored go-to-market messaging variables via LLM.
 
 Simply modify promps/custom_messaging.txt to get your desired custom message. 
 
@@ -76,9 +76,9 @@ Uses the prospect brief as context to generate three messaging variables designe
 
 | Output Variable | Description |
 |---|---|
-| `custom_message_output_1` | **Selected Service** — the most relevant service the prospect offers |
-| `custom_message_output_2` | **Problem Solved** — the specific problem that service addresses |
-| `custom_message_output_3` | **Intent Signals** — four observable, data-driven triggers indicating a prospect needs this service (e.g. job posts, search intent keywords, declining web metrics) |
+| `custom_message_output_1` | **Selected Service** — the most relevant service or product the prospect offers |
+| `custom_message_output_2` | **Problem Solved** — the specific problem that service or product addresses |
+| `custom_message_output_3` | **Intent Signals** — four observable, data-driven triggers indicating a prospect needs this service or product (e.g. job posts, search intent keywords, declining web metrics) |
 
 Results are cached in Supabase so previously processed companies are returned instantly without re-scraping.
 
